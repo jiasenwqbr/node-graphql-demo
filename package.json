@@ -1,0 +1,29 @@
+{
+  "name": "node-graphql-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type":"module",
+  "scripts": {
+    "dev": "yarn run nodemon --exec babel-node index.js",
+    "build": "yarn run babel . -d buid --ignore node_modules --minified",
+    "start": "node build"
+  },
+  "dependencies": {
+    "graphql": "^16.8.2",
+    "graphql-tools": "^9.0.1",
+    "koa": "^2.15.3",
+    "koa-graphql": "^0.12.0",
+    "koa-router": "^12.0.1",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/runtime": "^7.24.7",
+    "nodemon": "^3.1.3"
+  }
+}
